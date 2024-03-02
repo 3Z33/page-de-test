@@ -64,7 +64,8 @@ margin-left: 50px;
 }
 @media screen and (max-width:900px){
   ul.navbar-list{background-color: #629087;z-index: 1000;}
-  nav.navbar{position:fixed;top: 0;background-color: #53cfc5;width: 100%;}
+  .navbar-list a:hover{color:white;}
+  nav.navbar{position:fixed;top: 0;background-color: #629087;width: 100%;}
   .navbar-list li{width: 100vw;}
  ul.navbar-list :nth-child(4), ul.navbar-list :nth-child(5){margin-left: 0px;}
   #logo{margin-right: 10px;}
@@ -3470,11 +3471,19 @@ margin-top: 20px;
   padding-top: 110px;
   }
   
-  #img-test {
-  width: 626px;
-  height: 717px;
+.backgroundlelivre{
+  width: 600px;
   margin-left: 20px;
-  }
+  background-color: #0c5c24;
+  background-image: url("ressources/dollar-gill-0V7_N62zZcU-unsplash 1.png");
+
+  background-size: cover;
+  background-position: 92%;
+}
+
+@media screen and (max-width: 990px){
+  .backgroundlelivre{display: none;}
+}
   
   .le-livre-de-votre-vie-faire-couler-encre{
     font-family: "Red Hat Display";
@@ -3569,14 +3578,9 @@ margin-top: 20px;
   }
   
   
-  @media screen and (max-width:1070px){
-  #img-test{width: 450px;margin-left: 10px;}
-  }
+  @media screen and (max-width:990px){
   
-  
-  @media screen and (max-width:890px){
-  
-  #img-test, #marketing-roseau{display: none;}
+  #marketing-roseau{display: none;}
   .le-livre-de-votre-vie-faire-couler-encre{text-align: center;margin: auto;font-size: 20px;}
   .le-livre-de-votre-vie-strip{justify-content: center;}
   .le-livre-de-votre-vie-text-container{padding: 0;margin: auto;}
